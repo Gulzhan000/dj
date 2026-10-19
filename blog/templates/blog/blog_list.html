@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Список статей</title>
+</head>
+<body>
+    <main>
+        <h1>Список статей</h1>
+        {% for blog in blogs %}
+            <article>
+                <h2><a href="{% url 'blog:detail' blog.id %}">{{ blog.title }}</a></h2>
+                <p>Автор: {{ blog.author }}</p>
+                <p>Просмотры: {{ blog.likes }}</p>
+            </article>
+        {% empty %}
+            <p>Статей пока нет.</p>
+        {% endfor %}
+    </main>
+</body>
+</html>
