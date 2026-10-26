@@ -1,0 +1,156 @@
+{
+  "tests_run": 30,
+  "successful": true,
+  "results": [
+    {
+      "test": "blog.tests.BlogCRUDTests.test_create_get_shows_empty_form",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_create_post_saves_and_redirects",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_create_rejects_each_blank_field",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_create_rejects_long_author",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_create_rejects_long_title",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_csrf_is_required_for_all_mutations",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_delete_get_only_asks_for_confirmation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_delete_post_removes_only_target",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_empty_list_message",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_form_excludes_counter",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_html_in_title_is_escaped",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_invalid_update_preserves_record",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_list_contains_crud_links",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_missing_update_and_delete_return_404",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_mutations_reject_unsupported_methods",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_post_cannot_override_counter",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_update_get_prefills_form",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_update_post_changes_existing_record",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogCRUDTests.test_valid_csrf_token_allows_create",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogListDetailTests.test_blog_string_representation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogListDetailTests.test_detail_get_increments_likes_by_one",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogListDetailTests.test_detail_page_returns_404_for_missing_id",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogListDetailTests.test_detail_page_uses_expected_template_and_content",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogListDetailTests.test_each_detail_get_increments_likes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogListDetailTests.test_list_context_contains_created_blog_and_id",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogListDetailTests.test_list_page_contains_blog_data",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogListDetailTests.test_list_page_link_opens_detail_page",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogListDetailTests.test_list_page_returns_200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogListDetailTests.test_list_page_uses_expected_template",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "blog.tests.BlogListDetailTests.test_new_blog_likes_default_to_zero",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

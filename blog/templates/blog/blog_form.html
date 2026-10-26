@@ -1,0 +1,8 @@
+{% extends 'blog/base.html' %}
+{% block title %}{{ heading }}{% endblock %}
+{% block content %}
+<h1>{{ heading }}</h1>
+<form method="post">{% csrf_token %}{{ form.as_p }}
+<div class="actions"><button type="submit">Сохранить</button><a href="{% url 'blog:list' %}">Отмена</a></div>
+</form>
+{% endblock %}

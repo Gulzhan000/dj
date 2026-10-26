@@ -122,3 +122,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Run tests and export their actual results to a Word report.
+TEST_RUNNER = 'blog.test_runner.ReportingRunner'

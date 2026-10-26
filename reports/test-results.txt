@@ -1,0 +1,68 @@
+Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+
+Found 30 test(s).
+Operations to perform:
+  Synchronize unmigrated apps: messages, staticfiles
+  Apply all migrations: admin, auth, blog, contenttypes, sessions
+Synchronizing apps without migrations:
+  Creating tables...
+    Running deferred SQL...
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying blog.0001_initial... OK
+  Applying sessions.0001_initial... OK
+System check identified no issues (0 silenced).
+test_create_get_shows_empty_form (blog.tests.BlogCRUDTests.test_create_get_shows_empty_form) ... ok
+test_create_post_saves_and_redirects (blog.tests.BlogCRUDTests.test_create_post_saves_and_redirects) ... ok
+test_create_rejects_each_blank_field (blog.tests.BlogCRUDTests.test_create_rejects_each_blank_field) ... ok
+test_create_rejects_long_author (blog.tests.BlogCRUDTests.test_create_rejects_long_author) ... ok
+test_create_rejects_long_title (blog.tests.BlogCRUDTests.test_create_rejects_long_title) ... ok
+test_csrf_is_required_for_all_mutations (blog.tests.BlogCRUDTests.test_csrf_is_required_for_all_mutations) ... ok
+test_delete_get_only_asks_for_confirmation (blog.tests.BlogCRUDTests.test_delete_get_only_asks_for_confirmation) ... ok
+test_delete_post_removes_only_target (blog.tests.BlogCRUDTests.test_delete_post_removes_only_target) ... ok
+test_empty_list_message (blog.tests.BlogCRUDTests.test_empty_list_message) ... ok
+test_form_excludes_counter (blog.tests.BlogCRUDTests.test_form_excludes_counter) ... ok
+test_html_in_title_is_escaped (blog.tests.BlogCRUDTests.test_html_in_title_is_escaped) ... ok
+test_invalid_update_preserves_record (blog.tests.BlogCRUDTests.test_invalid_update_preserves_record) ... ok
+test_list_contains_crud_links (blog.tests.BlogCRUDTests.test_list_contains_crud_links) ... ok
+test_missing_update_and_delete_return_404 (blog.tests.BlogCRUDTests.test_missing_update_and_delete_return_404) ... ok
+test_mutations_reject_unsupported_methods (blog.tests.BlogCRUDTests.test_mutations_reject_unsupported_methods) ... ok
+test_post_cannot_override_counter (blog.tests.BlogCRUDTests.test_post_cannot_override_counter) ... ok
+test_update_get_prefills_form (blog.tests.BlogCRUDTests.test_update_get_prefills_form) ... ok
+test_update_post_changes_existing_record (blog.tests.BlogCRUDTests.test_update_post_changes_existing_record) ... ok
+test_valid_csrf_token_allows_create (blog.tests.BlogCRUDTests.test_valid_csrf_token_allows_create) ... ok
+test_blog_string_representation (blog.tests.BlogListDetailTests.test_blog_string_representation) ... ok
+test_detail_get_increments_likes_by_one (blog.tests.BlogListDetailTests.test_detail_get_increments_likes_by_one) ... ok
+test_detail_page_returns_404_for_missing_id (blog.tests.BlogListDetailTests.test_detail_page_returns_404_for_missing_id) ... ok
+test_detail_page_uses_expected_template_and_content (blog.tests.BlogListDetailTests.test_detail_page_uses_expected_template_and_content) ... ok
+test_each_detail_get_increments_likes (blog.tests.BlogListDetailTests.test_each_detail_get_increments_likes) ... ok
+test_list_context_contains_created_blog_and_id (blog.tests.BlogListDetailTests.test_list_context_contains_created_blog_and_id) ... ok
+test_list_page_contains_blog_data (blog.tests.BlogListDetailTests.test_list_page_contains_blog_data) ... ok
+test_list_page_link_opens_detail_page (blog.tests.BlogListDetailTests.test_list_page_link_opens_detail_page) ... ok
+test_list_page_returns_200 (blog.tests.BlogListDetailTests.test_list_page_returns_200) ... ok
+test_list_page_uses_expected_template (blog.tests.BlogListDetailTests.test_list_page_uses_expected_template) ... ok
+test_new_blog_likes_default_to_zero (blog.tests.BlogListDetailTests.test_new_blog_likes_default_to_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.200s
+
+OK
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+
+Word report: C:\Users\ASUS\Desktop\dj\reports\lab6_report.docx

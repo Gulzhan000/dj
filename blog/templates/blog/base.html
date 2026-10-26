@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Django Blog{% endblock %}</title>
+  <style>
+    body {font: 17px/1.6 'Segoe UI', sans-serif; margin: 0; background: #f3f5f8; color: #182334;}
+    header {background: #173b58; color: white; padding: 20px max(5%, calc((100% - 960px)/2));}
+    header a {color: white; text-decoration: none; font-weight: 600;}
+    main {max-width: 960px; margin: 32px auto; padding: 0 24px;}
+    article, form {background: white; border: 1px solid #d8e0e8; border-radius: 10px; padding: 24px; margin: 20px 0;}
+    h1 {font-size: 30px;} h2 {margin-top: 0;} a {color: #185b8e;}
+    .button, button {display: inline-block; background: #185b8e; color: white; padding: 9px 18px; border: 0; border-radius: 5px; text-decoration: none; font: inherit; cursor: pointer;}
+    .danger {background: #a12d3d;} .actions {display: flex; gap: 18px; align-items: center;}
+    label {display: block; font-weight: 600;} input, textarea {box-sizing: border-box; width: 100%; padding: 10px; border: 1px solid #9aabba; border-radius: 4px; font: inherit;}
+    .errorlist {color: #a12d3d;} .meta {color: #536577;}
+  </style>
+</head>
+<body><header><a href="{% url 'blog:list' %}">Django Blog · Лабораторная работа 6</a></header>
+<main>{% block content %}{% endblock %}</main></body>
+</html>
